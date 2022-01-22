@@ -1,0 +1,7 @@
+inline.*
+*.hat
+*.obj
+*.o
+*.so
+.ipynb_checkpoints/
+_tmp/
