@@ -1,2 +1,2 @@
 gcc
-libomp-11-dev
+libomp5-dev
