@@ -1,2 +1,0 @@
-gcc
-libomp-10-dev
