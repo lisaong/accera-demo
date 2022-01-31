@@ -13,6 +13,6 @@ RUN adduser --disabled-password \
     --uid ${NB_UID} \
     ${NB_USER}
 
-RUN pip install --no-cache notebook
-
 WORKDIR ${HOME}
+
+RUN pip install --no-cache notebook jupyterlab
