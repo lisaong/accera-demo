@@ -1,6 +1,7 @@
 FROM python:3.7-slim
 
 RUN apt-get update && apt-get install -y gcc libomp-11-dev
+RUN pip install --no-cache notebook jupyterlab
 
 # create user with a home directory
 ARG NB_USER
@@ -15,4 +16,4 @@ RUN adduser --disabled-password \
 
 WORKDIR ${HOME}
 
-RUN pip install --no-cache notebook jupyterlab
+ADD quickstart.ipynb ${HOME}/index.ipynb
